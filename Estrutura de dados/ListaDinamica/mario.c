@@ -105,28 +105,20 @@ char* persMaisVidas(){
   return personagem;
 }
 
-int string_to_inteiro(char string[]){
-    int asc = 0;
-    for (int i = 0; i < strlen(string); i++){
-        asc += (int)(string[i]);
-    }
-    return asc;
-    
-    
+ 
 }
 
 int main(){
-    string_to_inteiro();
-    // adicionar("Mario", 2, 0);
-    // adicionar("Luigi", 9, 1);
-    // adicionar("Yoshi", 5, 2);
-    // adicionar("Princesa", 7, 3);
-    // adicionar("Bowser", 3, 4);
-    // imprimir_lista_personagem();
-    // printf("Testando remoção:\n");
-    // remover("Mario");
-    // imprimir_lista_personagem();
-    // printf("Personagem c/ mais vidas: %s\n", persMaisVidas());
+    adicionar("Mario", 2, 0);
+    adicionar("Luigi", 9, 1);
+    adicionar("Yoshi", 5, 2);
+    adicionar("Princesa", 7, 3);
+    adicionar("Bowser", 3, 4);
+    imprimir_lista_personagem();
+    printf("Testando remoção:\n");
+    remover("Mario");
+    imprimir_lista_personagem();
+    printf("Personagem c/ mais vidas: %s\n", persMaisVidas());
     return 0;
 }
 
